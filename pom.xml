@@ -50,13 +50,12 @@
 
     <properties>
         <java.version>11</java.version>
-        <jaxb-api.version>2.4.0-b180830.0359</jaxb-api.version>
-        <jaxb-impl.version>2.4.0-b180830.0438</jaxb-impl.version>
-        <jaxb-plugin.version>0.14.0</jaxb-plugin.version>
+        <jaxb-impl.version>2.3.1</jaxb-impl.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.targetEncoding>UTF-8</project.build.targetEncoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven-jaxb-plugin.version>0.14.0</maven-jaxb-plugin.version>
         <spring-boot-admin.version>2.2.4</spring-boot-admin.version>
     </properties>
 
@@ -130,7 +129,6 @@
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
-            <version>${jaxb-api.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
@@ -162,7 +160,7 @@
             <plugin>
                 <groupId>org.jvnet.jaxb2.maven2</groupId>
                 <artifactId>maven-jaxb2-plugin</artifactId>
-                <version>${jaxb-plugin.version}</version>
+                <version>${maven-jaxb-plugin.version}</version>
                 <executions>
                     <execution>
                         <goals>
