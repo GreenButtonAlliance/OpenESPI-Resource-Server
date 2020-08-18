@@ -133,7 +133,7 @@ public class IntervalReading
      */
     public List<ReadingQuality> getReadingQuality() {
         if (readingQuality == null) {
-            readingQuality = new ArrayList<ReadingQuality>();
+            readingQuality = new ArrayList<>();
         }
         return this.readingQuality;
     }

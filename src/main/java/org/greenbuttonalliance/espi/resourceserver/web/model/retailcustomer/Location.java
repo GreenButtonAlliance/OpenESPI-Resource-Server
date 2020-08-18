@@ -336,7 +336,7 @@ public class Location
      */
     public List<PositionPoint> getPositionPoints() {
         if (positionPoints == null) {
-            positionPoints = new ArrayList<PositionPoint>();
+            positionPoints = new ArrayList<>();
         }
         return this.positionPoints;
     }

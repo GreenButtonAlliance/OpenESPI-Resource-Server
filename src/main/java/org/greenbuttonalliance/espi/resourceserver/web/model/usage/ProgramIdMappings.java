@@ -101,7 +101,7 @@ public class ProgramIdMappings
      */
     public List<ProgramIdMappings.ProgramIdMapping> getProgramIdMapping() {
         if (programIdMapping == null) {
-            programIdMapping = new ArrayList<ProgramIdMappings.ProgramIdMapping>();
+            programIdMapping = new ArrayList<>();
         }
         return this.programIdMapping;
     }

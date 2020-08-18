@@ -176,7 +176,7 @@ public class CustomerAccount
      */
     public List<AccountNotification> getNotifications() {
         if (notifications == null) {
-            notifications = new ArrayList<AccountNotification>();
+            notifications = new ArrayList<>();
         }
         return this.notifications;
     }

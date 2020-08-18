@@ -91,7 +91,7 @@ public class AggregateNodeRefs
      */
     public List<AggregateNodeRef> getAggregateNodeRef() {
         if (aggregateNodeRef == null) {
-            aggregateNodeRef = new ArrayList<AggregateNodeRef>();
+            aggregateNodeRef = new ArrayList<>();
         }
         return this.aggregateNodeRef;
     }

@@ -717,7 +717,7 @@ public class ApplicationInformation
      */
     public List<String> getRedirectUri() {
         if (redirectUri == null) {
-            redirectUri = new ArrayList<String>();
+            redirectUri = new ArrayList<>();
         }
         return this.redirectUri;
     }
@@ -898,7 +898,7 @@ public class ApplicationInformation
      */
     public List<String> getContacts() {
         if (contacts == null) {
-            contacts = new ArrayList<String>();
+            contacts = new ArrayList<>();
         }
         return this.contacts;
     }
@@ -951,7 +951,7 @@ public class ApplicationInformation
      */
     public List<String> getScope() {
         if (scope == null) {
-            scope = new ArrayList<String>();
+            scope = new ArrayList<>();
         }
         return this.scope;
     }
@@ -980,7 +980,7 @@ public class ApplicationInformation
      */
     public List<GrantType> getGrantTypes() {
         if (grantTypes == null) {
-            grantTypes = new ArrayList<GrantType>();
+            grantTypes = new ArrayList<>();
         }
         return this.grantTypes;
     }

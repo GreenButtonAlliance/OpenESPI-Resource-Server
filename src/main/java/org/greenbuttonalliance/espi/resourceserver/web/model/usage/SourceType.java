@@ -105,7 +105,7 @@ public class SourceType {
     @XmlSchemaType(name = "language")
     protected String lang;
     @XmlAnyAttribute
-    private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+    private Map<QName, String> otherAttributes = new HashMap<>();
 
     /**
      * Gets the value of the authorOrCategoryOrContributor property.
@@ -143,7 +143,7 @@ public class SourceType {
      */
     public List<java.lang.Object> getAuthorOrCategoryOrContributor() {
         if (authorOrCategoryOrContributor == null) {
-            authorOrCategoryOrContributor = new ArrayList<java.lang.Object>();
+            authorOrCategoryOrContributor = new ArrayList<>();
         }
         return this.authorOrCategoryOrContributor;
     }

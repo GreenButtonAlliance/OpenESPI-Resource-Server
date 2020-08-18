@@ -105,7 +105,7 @@ public class EntryType {
     @XmlSchemaType(name = "language")
     protected String lang;
     @XmlAnyAttribute
-    private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+    private Map<QName, String> otherAttributes = new HashMap<>();
 
     /**
      * Gets the value of the authorOrCategoryOrContent property.
@@ -143,7 +143,7 @@ public class EntryType {
      */
     public List<java.lang.Object> getAuthorOrCategoryOrContent() {
         if (authorOrCategoryOrContent == null) {
-            authorOrCategoryOrContent = new ArrayList<java.lang.Object>();
+            authorOrCategoryOrContent = new ArrayList<>();
         }
         return this.authorOrCategoryOrContent;
     }

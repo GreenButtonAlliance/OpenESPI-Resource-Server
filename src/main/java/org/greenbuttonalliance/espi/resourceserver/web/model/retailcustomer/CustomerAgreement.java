@@ -185,7 +185,7 @@ public class CustomerAgreement
      */
     public List<DemandResponseProgram> getDemandResponseProgram() {
         if (demandResponseProgram == null) {
-            demandResponseProgram = new ArrayList<DemandResponseProgram>();
+            demandResponseProgram = new ArrayList<>();
         }
         return this.demandResponseProgram;
     }
@@ -214,7 +214,7 @@ public class CustomerAgreement
      */
     public List<PricingStructure> getPricingStructures() {
         if (pricingStructures == null) {
-            pricingStructures = new ArrayList<PricingStructure>();
+            pricingStructures = new ArrayList<>();
         }
         return this.pricingStructures;
     }
@@ -267,7 +267,7 @@ public class CustomerAgreement
      */
     public List<Status> getFutureStatus() {
         if (futureStatus == null) {
-            futureStatus = new ArrayList<Status>();
+            futureStatus = new ArrayList<>();
         }
         return this.futureStatus;
     }

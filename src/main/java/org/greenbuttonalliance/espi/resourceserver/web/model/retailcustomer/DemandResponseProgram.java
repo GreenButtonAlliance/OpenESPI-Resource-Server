@@ -174,7 +174,7 @@ public class DemandResponseProgram {
      */
     public List<ProgramDate> getProgramDate() {
         if (programDate == null) {
-            programDate = new ArrayList<ProgramDate>();
+            programDate = new ArrayList<>();
         }
         return this.programDate;
     }

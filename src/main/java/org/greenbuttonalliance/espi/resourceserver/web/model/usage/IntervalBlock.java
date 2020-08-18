@@ -118,7 +118,7 @@ public class IntervalBlock
      */
     public List<IntervalReading> getIntervalReading() {
         if (intervalReading == null) {
-            intervalReading = new ArrayList<IntervalReading>();
+            intervalReading = new ArrayList<>();
         }
         return this.intervalReading;
     }

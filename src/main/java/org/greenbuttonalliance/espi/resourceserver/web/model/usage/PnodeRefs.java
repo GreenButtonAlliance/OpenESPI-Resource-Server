@@ -91,7 +91,7 @@ public class PnodeRefs
      */
     public List<PnodeRef> getPnodeRef() {
         if (pnodeRef == null) {
-            pnodeRef = new ArrayList<PnodeRef>();
+            pnodeRef = new ArrayList<>();
         }
         return this.pnodeRef;
     }

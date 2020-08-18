@@ -89,7 +89,7 @@ public class BatchListType {
      */
     public List<String> getResources() {
         if (resources == null) {
-            resources = new ArrayList<String>();
+            resources = new ArrayList<>();
         }
         return this.resources;
     }

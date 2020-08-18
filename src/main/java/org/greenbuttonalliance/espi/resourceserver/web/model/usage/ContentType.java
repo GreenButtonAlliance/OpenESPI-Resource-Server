@@ -86,7 +86,7 @@ public class ContentType {
     @XmlSchemaType(name = "language")
     protected String lang;
     @XmlAnyAttribute
-    private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+    private Map<QName, String> otherAttributes = new HashMap<>();
 
     /**
      * 
@@ -115,7 +115,7 @@ public class ContentType {
      */
     public List<java.lang.Object> getContent() {
         if (content == null) {
-            content = new ArrayList<java.lang.Object>();
+            content = new ArrayList<>();
         }
         return this.content;
     }

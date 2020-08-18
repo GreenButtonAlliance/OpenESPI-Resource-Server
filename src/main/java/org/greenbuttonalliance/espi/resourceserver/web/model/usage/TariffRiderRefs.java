@@ -91,7 +91,7 @@ public class TariffRiderRefs
      */
     public List<TariffRiderRef> getTariffRiderRef() {
         if (tariffRiderRef == null) {
-            tariffRiderRef = new ArrayList<TariffRiderRef>();
+            tariffRiderRef = new ArrayList<>();
         }
         return this.tariffRiderRef;
     }

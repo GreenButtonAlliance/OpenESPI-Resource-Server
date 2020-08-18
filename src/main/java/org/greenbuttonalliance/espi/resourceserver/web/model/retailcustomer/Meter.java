@@ -119,7 +119,7 @@ public class Meter
      */
     public List<MeterMultiplier> getMeterMultipliers() {
         if (meterMultipliers == null) {
-            meterMultipliers = new ArrayList<MeterMultiplier>();
+            meterMultipliers = new ArrayList<>();
         }
         return this.meterMultipliers;
     }
