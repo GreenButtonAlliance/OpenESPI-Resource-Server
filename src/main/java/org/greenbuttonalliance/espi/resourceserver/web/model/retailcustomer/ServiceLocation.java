@@ -175,7 +175,7 @@ public class ServiceLocation
      */
     public List<UsagePoints> getUsagePoints() {
         if (usagePoints == null) {
-            usagePoints = new ArrayList<UsagePoints>();
+            usagePoints = new ArrayList<>();
         }
         return this.usagePoints;
     }

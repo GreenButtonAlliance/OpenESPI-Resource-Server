@@ -52,78 +52,80 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private static final String NAESBCustomerNamespaceURI = "http://naesb.org/espi/customer";
-    private static final String atomNamespaceURI = "http://www.w3.org/2005/Atom";
+    private static final String NAESB_CUSTOMER_NAMESPACE_URI = "http://naesb.org/espi/customer";
+    private static final String ATOMNAMESPACEURI = "http://www.w3.org/2005/Atom";
 
-    private static final QName _AcceptanceTest_QNAME = new QName(NAESBCustomerNamespaceURI, "AcceptanceTest");
-    private static final QName _AccountNotification_QNAME = new QName(NAESBCustomerNamespaceURI, "AccountNotification");
-    private static final QName _Agreement_QNAME = new QName(NAESBCustomerNamespaceURI, "Agreement");
-    private static final QName _Asset_QNAME = new QName(NAESBCustomerNamespaceURI, "Asset");
-    private static final QName _AssetContainer_QNAME = new QName(NAESBCustomerNamespaceURI, "AssetContainer");
-    private static final QName _BatchItemInfo_QNAME = new QName(NAESBCustomerNamespaceURI, "BatchItemInfo");
-    private static final QName _BatchList_QNAME = new QName(NAESBCustomerNamespaceURI, "BatchList");
-    private static final QName _Customer_QNAME = new QName(NAESBCustomerNamespaceURI, "Customer");
-    private static final QName _CustomerAccount_QNAME = new QName(NAESBCustomerNamespaceURI, "CustomerAccount");
-    private static final QName _CustomerAgreement_QNAME = new QName(NAESBCustomerNamespaceURI, "CustomerAgreement");
-    private static final QName _DateTimeInterval_QNAME = new QName(NAESBCustomerNamespaceURI, "DateTimeInterval");
-    private static final QName _DemandResponseProgram_QNAME = new QName(NAESBCustomerNamespaceURI, "DemandResponseProgram");
-    private static final QName _Document_QNAME = new QName(NAESBCustomerNamespaceURI, "Document");
-    private static final QName _ElectronicAddress_QNAME = new QName(NAESBCustomerNamespaceURI, "ElectronicAddress");
-    private static final QName _EndDevice_QNAME = new QName(NAESBCustomerNamespaceURI, "EndDevice");
-    private static final QName _IdentifiedObject_QNAME = new QName(NAESBCustomerNamespaceURI, "IdentifiedObject");
-    private static final QName _LifecycleDate_QNAME = new QName(NAESBCustomerNamespaceURI, "LifecycleDate");
-    private static final QName _LocalTimeParameters_QNAME = new QName(NAESBCustomerNamespaceURI, "LocalTimeParameters");
-    private static final QName _Location_QNAME = new QName(NAESBCustomerNamespaceURI, "Location");
-    private static final QName _Meter_QNAME = new QName(NAESBCustomerNamespaceURI, "Meter");
-    private static final QName _MeterMultiplier_QNAME = new QName(NAESBCustomerNamespaceURI, "MeterMultiplier");
-    private static final QName _Object_QNAME = new QName(NAESBCustomerNamespaceURI, "Object");
-    private static final QName _Organisation_QNAME = new QName(NAESBCustomerNamespaceURI, "Organisation");
-    private static final QName _OrganisationRole_QNAME = new QName(NAESBCustomerNamespaceURI, "OrganisationRole");
-    private static final QName _PositionPoint_QNAME = new QName(NAESBCustomerNamespaceURI, "PositionPoint");
-    private static final QName _PricingStructure_QNAME = new QName(NAESBCustomerNamespaceURI, "PricingStructure");
-    private static final QName _Priority_QNAME = new QName(NAESBCustomerNamespaceURI, "Priority");
-    private static final QName _ProgramDate_QNAME = new QName(NAESBCustomerNamespaceURI, "ProgramDate");
-    private static final QName _ProgramDateIdMapping_QNAME = new QName(NAESBCustomerNamespaceURI, "ProgramDateIdMapping");
-    private static final QName _ProgramDateIdMappings_QNAME = new QName(NAESBCustomerNamespaceURI, "ProgramDateIdMappings");
-    private static final QName _ServiceLocation_QNAME = new QName(NAESBCustomerNamespaceURI, "ServiceLocation");
-    private static final QName _ServiceSupplier_QNAME = new QName(NAESBCustomerNamespaceURI, "ServiceSupplier");
-    private static final QName _Status_QNAME = new QName(NAESBCustomerNamespaceURI, "Status");
-    private static final QName _StreetAddress_QNAME = new QName(NAESBCustomerNamespaceURI, "StreetAddress");
-    private static final QName _StreetDetail_QNAME = new QName(NAESBCustomerNamespaceURI, "StreetDetail");
-    private static final QName _SummaryMeasurement_QNAME = new QName(NAESBCustomerNamespaceURI, "SummaryMeasurement");
-    private static final QName _TelephoneNumber_QNAME = new QName(NAESBCustomerNamespaceURI, "TelephoneNumber");
-    private static final QName _TimeConfiguration_QNAME = new QName(NAESBCustomerNamespaceURI, "TimeConfiguration");
-    private static final QName _TownDetail_QNAME = new QName(NAESBCustomerNamespaceURI, "TownDetail");
-    private static final QName _UsagePoint_QNAME = new QName(NAESBCustomerNamespaceURI, "UsagePoint");
-    private static final QName _UsagePoints_QNAME = new QName(NAESBCustomerNamespaceURI, "UsagePoints");
-    private static final QName _WorkLocation_QNAME = new QName(NAESBCustomerNamespaceURI, "WorkLocation");
-    private static final QName _Feed_QNAME = new QName(atomNamespaceURI, "feed");
-    private static final QName _Entry_QNAME = new QName(atomNamespaceURI, "entry");
-    private static final QName _SourceTypeAuthor_QNAME = new QName(atomNamespaceURI, "author");
-    private static final QName _SourceTypeCategory_QNAME = new QName(atomNamespaceURI, "category");
-    private static final QName _SourceTypeContributor_QNAME = new QName(atomNamespaceURI, "contributor");
-    private static final QName _SourceTypeGenerator_QNAME = new QName(atomNamespaceURI, "generator");
-    private static final QName _SourceTypeIcon_QNAME = new QName(atomNamespaceURI, "icon");
-    private static final QName _SourceTypeId_QNAME = new QName(atomNamespaceURI, "id");
-    private static final QName _SourceTypeLink_QNAME = new QName(atomNamespaceURI, "link");
-    private static final QName _SourceTypeLogo_QNAME = new QName(atomNamespaceURI, "logo");
-    private static final QName _SourceTypeRights_QNAME = new QName(atomNamespaceURI, "rights");
-    private static final QName _SourceTypeSubtitle_QNAME = new QName(atomNamespaceURI, "subtitle");
-    private static final QName _SourceTypeTitle_QNAME = new QName(atomNamespaceURI, "title");
-    private static final QName _SourceTypeUpdated_QNAME = new QName(atomNamespaceURI, "updated");
-    private static final QName _PersonTypeName_QNAME = new QName(atomNamespaceURI, "name");
-    private static final QName _PersonTypeUri_QNAME = new QName(atomNamespaceURI, "uri");
-    private static final QName _PersonTypeEmail_QNAME = new QName(atomNamespaceURI, "email");
-    private static final QName _EntryTypeContent_QNAME = new QName(atomNamespaceURI, "content");
-    private static final QName _EntryTypePublished_QNAME = new QName(atomNamespaceURI, "published");
-    private static final QName _EntryTypeSource_QNAME = new QName(atomNamespaceURI, "source");
-    private static final QName _EntryTypeSummary_QNAME = new QName(atomNamespaceURI, "summary");
+    private static final QName _AcceptanceTest_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "AcceptanceTest");
+    private static final QName _AccountNotification_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "AccountNotification");
+    private static final QName _Agreement_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "Agreement");
+    private static final QName _Asset_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "Asset");
+    private static final QName _AssetContainer_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "AssetContainer");
+    private static final QName _BatchItemInfo_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "BatchItemInfo");
+    private static final QName _BatchList_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "BatchList");
+    private static final QName _Customer_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "Customer");
+    private static final QName _CustomerAccount_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "CustomerAccount");
+    private static final QName _CustomerAgreement_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "CustomerAgreement");
+    private static final QName _DateTimeInterval_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "DateTimeInterval");
+    private static final QName _DemandResponseProgram_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "DemandResponseProgram");
+    private static final QName _Document_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "Document");
+    private static final QName _ElectronicAddress_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "ElectronicAddress");
+    private static final QName _EndDevice_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "EndDevice");
+    private static final QName _IdentifiedObject_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "IdentifiedObject");
+    private static final QName _LifecycleDate_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "LifecycleDate");
+    private static final QName _LocalTimeParameters_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "LocalTimeParameters");
+    private static final QName _Location_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "Location");
+    private static final QName _Meter_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "Meter");
+    private static final QName _MeterMultiplier_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "MeterMultiplier");
+    private static final QName _Object_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "Object");
+    private static final QName _Organisation_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "Organisation");
+    private static final QName _OrganisationRole_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "OrganisationRole");
+    private static final QName _PositionPoint_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "PositionPoint");
+    private static final QName _PricingStructure_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "PricingStructure");
+    private static final QName _Priority_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "Priority");
+    private static final QName _ProgramDate_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "ProgramDate");
+    private static final QName _ProgramDateIdMapping_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "ProgramDateIdMapping");
+    private static final QName _ProgramDateIdMappings_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "ProgramDateIdMappings");
+    private static final QName _ServiceLocation_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "ServiceLocation");
+    private static final QName _ServiceSupplier_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "ServiceSupplier");
+    private static final QName _Status_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "Status");
+    private static final QName _StreetAddress_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "StreetAddress");
+    private static final QName _StreetDetail_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "StreetDetail");
+    private static final QName _SummaryMeasurement_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "SummaryMeasurement");
+    private static final QName _TelephoneNumber_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "TelephoneNumber");
+    private static final QName _TimeConfiguration_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "TimeConfiguration");
+    private static final QName _TownDetail_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "TownDetail");
+    private static final QName _UsagePoint_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "UsagePoint");
+    private static final QName _UsagePoints_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "UsagePoints");
+    private static final QName _WorkLocation_QNAME = new QName(NAESB_CUSTOMER_NAMESPACE_URI, "WorkLocation");
+    private static final QName _Feed_QNAME = new QName(ATOMNAMESPACEURI, "feed");
+    private static final QName _Entry_QNAME = new QName(ATOMNAMESPACEURI, "entry");
+    private static final QName _SourceTypeAuthor_QNAME = new QName(ATOMNAMESPACEURI, "author");
+    private static final QName _SourceTypeCategory_QNAME = new QName(ATOMNAMESPACEURI, "category");
+    private static final QName _SourceTypeContributor_QNAME = new QName(ATOMNAMESPACEURI, "contributor");
+    private static final QName _SourceTypeGenerator_QNAME = new QName(ATOMNAMESPACEURI, "generator");
+    private static final QName _SourceTypeIcon_QNAME = new QName(ATOMNAMESPACEURI, "icon");
+    private static final QName _SourceTypeId_QNAME = new QName(ATOMNAMESPACEURI, "id");
+    private static final QName _SourceTypeLink_QNAME = new QName(ATOMNAMESPACEURI, "link");
+    private static final QName _SourceTypeLogo_QNAME = new QName(ATOMNAMESPACEURI, "logo");
+    private static final QName _SourceTypeRights_QNAME = new QName(ATOMNAMESPACEURI, "rights");
+    private static final QName _SourceTypeSubtitle_QNAME = new QName(ATOMNAMESPACEURI, "subtitle");
+    private static final QName _SourceTypeTitle_QNAME = new QName(ATOMNAMESPACEURI, "title");
+    private static final QName _SourceTypeUpdated_QNAME = new QName(ATOMNAMESPACEURI, "updated");
+    private static final QName _PersonTypeName_QNAME = new QName(ATOMNAMESPACEURI, "name");
+    private static final QName _PersonTypeUri_QNAME = new QName(ATOMNAMESPACEURI, "uri");
+    private static final QName _PersonTypeEmail_QNAME = new QName(ATOMNAMESPACEURI, "email");
+    private static final QName _EntryTypeContent_QNAME = new QName(ATOMNAMESPACEURI, "content");
+    private static final QName _EntryTypePublished_QNAME = new QName(ATOMNAMESPACEURI, "published");
+    private static final QName _EntryTypeSource_QNAME = new QName(ATOMNAMESPACEURI, "source");
+    private static final QName _EntryTypeSummary_QNAME = new QName(ATOMNAMESPACEURI, "summary");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.greenbuttonalliance.espi.resourceserver.web.model.retailcustomer
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package:
+     * org.greenbuttonalliance.espi.resourceserver.web.model.retailcustomer
      * 
      */
     public ObjectFactory() {
+        throw new UnsupportedOperationException();
     }
 
     /**
@@ -574,7 +576,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link AcceptanceTest }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "AcceptanceTest")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "AcceptanceTest")
     public JAXBElement<AcceptanceTest> createAcceptanceTest(AcceptanceTest value) {
         return new JAXBElement<>(_AcceptanceTest_QNAME, AcceptanceTest.class, null, value);
     }
@@ -587,7 +589,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link AccountNotification }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "AccountNotification")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "AccountNotification")
     public JAXBElement<AccountNotification> createAccountNotification(AccountNotification value) {
         return new JAXBElement<>(_AccountNotification_QNAME, AccountNotification.class, null, value);
     }
@@ -600,7 +602,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link Agreement }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "Agreement")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "Agreement")
     public JAXBElement<Agreement> createAgreement(Agreement value) {
         return new JAXBElement<>(_Agreement_QNAME, Agreement.class, null, value);
     }
@@ -613,7 +615,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link Asset }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "Asset")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "Asset")
     public JAXBElement<Asset> createAsset(Asset value) {
         return new JAXBElement<>(_Asset_QNAME, Asset.class, null, value);
     }
@@ -626,7 +628,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link AssetContainer }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "AssetContainer")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "AssetContainer")
     public JAXBElement<AssetContainer> createAssetContainer(AssetContainer value) {
         return new JAXBElement<>(_AssetContainer_QNAME, AssetContainer.class, null, value);
     }
@@ -639,7 +641,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link BatchItemInfo }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "BatchItemInfo")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "BatchItemInfo")
     public JAXBElement<BatchItemInfo> createBatchItemInfo(BatchItemInfo value) {
         return new JAXBElement<>(_BatchItemInfo_QNAME, BatchItemInfo.class, null, value);
     }
@@ -652,7 +654,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link BatchListType }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "BatchList")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "BatchList")
     public JAXBElement<BatchListType> createBatchList(BatchListType value) {
         return new JAXBElement<>(_BatchList_QNAME, BatchListType.class, null, value);
     }
@@ -665,7 +667,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link Customer }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "Customer")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "Customer")
     public JAXBElement<Customer> createCustomer(Customer value) {
         return new JAXBElement<>(_Customer_QNAME, Customer.class, null, value);
     }
@@ -678,7 +680,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link CustomerAccount }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "CustomerAccount")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "CustomerAccount")
     public JAXBElement<CustomerAccount> createCustomerAccount(CustomerAccount value) {
         return new JAXBElement<>(_CustomerAccount_QNAME, CustomerAccount.class, null, value);
     }
@@ -691,7 +693,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link CustomerAgreement }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "CustomerAgreement")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "CustomerAgreement")
     public JAXBElement<CustomerAgreement> createCustomerAgreement(CustomerAgreement value) {
         return new JAXBElement<>(_CustomerAgreement_QNAME, CustomerAgreement.class, null, value);
     }
@@ -704,7 +706,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link DateTimeInterval }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "DateTimeInterval")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "DateTimeInterval")
     public JAXBElement<DateTimeInterval> createDateTimeInterval(DateTimeInterval value) {
         return new JAXBElement<>(_DateTimeInterval_QNAME, DateTimeInterval.class, null, value);
     }
@@ -717,7 +719,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link DemandResponseProgram }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "DemandResponseProgram")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "DemandResponseProgram")
     public JAXBElement<DemandResponseProgram> createDemandResponseProgram(DemandResponseProgram value) {
         return new JAXBElement<>(_DemandResponseProgram_QNAME, DemandResponseProgram.class, null, value);
     }
@@ -730,7 +732,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link Document }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "Document")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "Document")
     public JAXBElement<Document> createDocument(Document value) {
         return new JAXBElement<>(_Document_QNAME, Document.class, null, value);
     }
@@ -743,7 +745,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link ElectronicAddress }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "ElectronicAddress")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "ElectronicAddress")
     public JAXBElement<ElectronicAddress> createElectronicAddress(ElectronicAddress value) {
         return new JAXBElement<>(_ElectronicAddress_QNAME, ElectronicAddress.class, null, value);
     }
@@ -756,7 +758,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link EndDevice }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "EndDevice")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "EndDevice")
     public JAXBElement<EndDevice> createEndDevice(EndDevice value) {
         return new JAXBElement<>(_EndDevice_QNAME, EndDevice.class, null, value);
     }
@@ -769,7 +771,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link IdentifiedObject }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "IdentifiedObject")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "IdentifiedObject")
     public JAXBElement<IdentifiedObject> createIdentifiedObject(IdentifiedObject value) {
         return new JAXBElement<>(_IdentifiedObject_QNAME, IdentifiedObject.class, null, value);
     }
@@ -782,7 +784,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link LifecycleDate }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "LifecycleDate")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "LifecycleDate")
     public JAXBElement<LifecycleDate> createLifecycleDate(LifecycleDate value) {
         return new JAXBElement<>(_LifecycleDate_QNAME, LifecycleDate.class, null, value);
     }
@@ -795,7 +797,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link TimeConfiguration }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "LocalTimeParameters")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "LocalTimeParameters")
     public JAXBElement<TimeConfiguration> createLocalTimeParameters(TimeConfiguration value) {
         return new JAXBElement<>(_LocalTimeParameters_QNAME, TimeConfiguration.class, null, value);
     }
@@ -808,7 +810,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link Location }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "Location")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "Location")
     public JAXBElement<Location> createLocation(Location value) {
         return new JAXBElement<>(_Location_QNAME, Location.class, null, value);
     }
@@ -821,7 +823,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link Meter }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "Meter")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "Meter")
     public JAXBElement<Meter> createMeter(Meter value) {
         return new JAXBElement<>(_Meter_QNAME, Meter.class, null, value);
     }
@@ -834,7 +836,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link MeterMultiplier }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "MeterMultiplier")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "MeterMultiplier")
     public JAXBElement<MeterMultiplier> createMeterMultiplier(MeterMultiplier value) {
         return new JAXBElement<>(_MeterMultiplier_QNAME, MeterMultiplier.class, null, value);
     }
@@ -847,7 +849,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link Object }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "Object")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "Object")
     public JAXBElement<Object> createObject(Object value) {
         return new JAXBElement<>(_Object_QNAME, Object.class, null, value);
     }
@@ -860,7 +862,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link Organisation }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "Organisation")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "Organisation")
     public JAXBElement<Organisation> createOrganisation(Organisation value) {
         return new JAXBElement<>(_Organisation_QNAME, Organisation.class, null, value);
     }
@@ -873,7 +875,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link OrganisationRole }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "OrganisationRole")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "OrganisationRole")
     public JAXBElement<OrganisationRole> createOrganisationRole(OrganisationRole value) {
         return new JAXBElement<>(_OrganisationRole_QNAME, OrganisationRole.class, null, value);
     }
@@ -886,7 +888,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link PositionPoint }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "PositionPoint")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "PositionPoint")
     public JAXBElement<PositionPoint> createPositionPoint(PositionPoint value) {
         return new JAXBElement<>(_PositionPoint_QNAME, PositionPoint.class, null, value);
     }
@@ -899,7 +901,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link PricingStructure }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "PricingStructure")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "PricingStructure")
     public JAXBElement<PricingStructure> createPricingStructure(PricingStructure value) {
         return new JAXBElement<>(_PricingStructure_QNAME, PricingStructure.class, null, value);
     }
@@ -912,7 +914,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link Priority }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "Priority")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "Priority")
     public JAXBElement<Priority> createPriority(Priority value) {
         return new JAXBElement<>(_Priority_QNAME, Priority.class, null, value);
     }
@@ -925,7 +927,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link ProgramDate }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "ProgramDate")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "ProgramDate")
     public JAXBElement<ProgramDate> createProgramDate(ProgramDate value) {
         return new JAXBElement<>(_ProgramDate_QNAME, ProgramDate.class, null, value);
     }
@@ -938,7 +940,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link ProgramDateIdMapping }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "ProgramDateIdMapping")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "ProgramDateIdMapping")
     public JAXBElement<ProgramDateIdMapping> createProgramDateIdMapping(ProgramDateIdMapping value) {
         return new JAXBElement<>(_ProgramDateIdMapping_QNAME, ProgramDateIdMapping.class, null, value);
     }
@@ -951,7 +953,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link ProgramDateIdMappings }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "ProgramDateIdMappings")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "ProgramDateIdMappings")
     public JAXBElement<ProgramDateIdMappings> createProgramDateIdMappings(ProgramDateIdMappings value) {
         return new JAXBElement<>(_ProgramDateIdMappings_QNAME, ProgramDateIdMappings.class, null, value);
     }
@@ -964,7 +966,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link ServiceLocation }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "ServiceLocation")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "ServiceLocation")
     public JAXBElement<ServiceLocation> createServiceLocation(ServiceLocation value) {
         return new JAXBElement<>(_ServiceLocation_QNAME, ServiceLocation.class, null, value);
     }
@@ -977,7 +979,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link ServiceSupplier }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "ServiceSupplier")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "ServiceSupplier")
     public JAXBElement<ServiceSupplier> createServiceSupplier(ServiceSupplier value) {
         return new JAXBElement<>(_ServiceSupplier_QNAME, ServiceSupplier.class, null, value);
     }
@@ -990,7 +992,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link Status }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "Status")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "Status")
     public JAXBElement<Status> createStatus(Status value) {
         return new JAXBElement<>(_Status_QNAME, Status.class, null, value);
     }
@@ -1003,7 +1005,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link StreetAddress }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "StreetAddress")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "StreetAddress")
     public JAXBElement<StreetAddress> createStreetAddress(StreetAddress value) {
         return new JAXBElement<>(_StreetAddress_QNAME, StreetAddress.class, null, value);
     }
@@ -1016,7 +1018,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link StreetDetail }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "StreetDetail")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "StreetDetail")
     public JAXBElement<StreetDetail> createStreetDetail(StreetDetail value) {
         return new JAXBElement<>(_StreetDetail_QNAME, StreetDetail.class, null, value);
     }
@@ -1029,7 +1031,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link SummaryMeasurement }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "SummaryMeasurement")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "SummaryMeasurement")
     public JAXBElement<SummaryMeasurement> createSummaryMeasurement(SummaryMeasurement value) {
         return new JAXBElement<>(_SummaryMeasurement_QNAME, SummaryMeasurement.class, null, value);
     }
@@ -1042,7 +1044,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link TelephoneNumber }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "TelephoneNumber")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "TelephoneNumber")
     public JAXBElement<TelephoneNumber> createTelephoneNumber(TelephoneNumber value) {
         return new JAXBElement<>(_TelephoneNumber_QNAME, TelephoneNumber.class, null, value);
     }
@@ -1055,7 +1057,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link TimeConfiguration }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "TimeConfiguration")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "TimeConfiguration")
     public JAXBElement<TimeConfiguration> createTimeConfiguration(TimeConfiguration value) {
         return new JAXBElement<>(_TimeConfiguration_QNAME, TimeConfiguration.class, null, value);
     }
@@ -1068,7 +1070,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link TownDetail }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "TownDetail")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "TownDetail")
     public JAXBElement<TownDetail> createTownDetail(TownDetail value) {
         return new JAXBElement<>(_TownDetail_QNAME, TownDetail.class, null, value);
     }
@@ -1081,7 +1083,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link UsagePoint }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "UsagePoint")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "UsagePoint")
     public JAXBElement<UsagePoint> createUsagePoint(UsagePoint value) {
         return new JAXBElement<>(_UsagePoint_QNAME, UsagePoint.class, null, value);
     }
@@ -1094,7 +1096,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link UsagePoints }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "UsagePoints")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "UsagePoints")
     public JAXBElement<UsagePoints> createUsagePoints(UsagePoints value) {
         return new JAXBElement<>(_UsagePoints_QNAME, UsagePoints.class, null, value);
     }
@@ -1107,7 +1109,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link WorkLocation }{@code >}
      */
-    @XmlElementDecl(namespace = NAESBCustomerNamespaceURI, name = "WorkLocation")
+    @XmlElementDecl(namespace = NAESB_CUSTOMER_NAMESPACE_URI, name = "WorkLocation")
     public JAXBElement<WorkLocation> createWorkLocation(WorkLocation value) {
         return new JAXBElement<>(_WorkLocation_QNAME, WorkLocation.class, null, value);
     }
@@ -1120,7 +1122,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link FeedType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "feed")
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "feed")
     public JAXBElement<FeedType> createFeed(FeedType value) {
         return new JAXBElement<>(_Feed_QNAME, FeedType.class, null, value);
     }
@@ -1133,7 +1135,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link EntryType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "entry")
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "entry")
     public JAXBElement<EntryType> createEntry(EntryType value) {
         return new JAXBElement<>(_Entry_QNAME, EntryType.class, null, value);
     }
@@ -1146,7 +1148,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link PersonType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "author", scope = SourceType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "author", scope = SourceType.class)
     public JAXBElement<PersonType> createSourceTypeAuthor(PersonType value) {
         return new JAXBElement<>(_SourceTypeAuthor_QNAME, PersonType.class, SourceType.class, value);
     }
@@ -1159,7 +1161,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link CategoryType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "category", scope = SourceType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "category", scope = SourceType.class)
     public JAXBElement<CategoryType> createSourceTypeCategory(CategoryType value) {
         return new JAXBElement<>(_SourceTypeCategory_QNAME, CategoryType.class, SourceType.class, value);
     }
@@ -1172,7 +1174,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link PersonType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "contributor", scope = SourceType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "contributor", scope = SourceType.class)
     public JAXBElement<PersonType> createSourceTypeContributor(PersonType value) {
         return new JAXBElement<>(_SourceTypeContributor_QNAME, PersonType.class, SourceType.class, value);
     }
@@ -1185,7 +1187,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link GeneratorType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "generator", scope = SourceType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "generator", scope = SourceType.class)
     public JAXBElement<GeneratorType> createSourceTypeGenerator(GeneratorType value) {
         return new JAXBElement<>(_SourceTypeGenerator_QNAME, GeneratorType.class, SourceType.class, value);
     }
@@ -1198,7 +1200,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link IconType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "icon", scope = SourceType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "icon", scope = SourceType.class)
     public JAXBElement<IconType> createSourceTypeIcon(IconType value) {
         return new JAXBElement<>(_SourceTypeIcon_QNAME, IconType.class, SourceType.class, value);
     }
@@ -1211,7 +1213,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link IdType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "id", scope = SourceType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "id", scope = SourceType.class)
     public JAXBElement<IdType> createSourceTypeId(IdType value) {
         return new JAXBElement<>(_SourceTypeId_QNAME, IdType.class, SourceType.class, value);
     }
@@ -1224,7 +1226,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link LinkType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "link", scope = SourceType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "link", scope = SourceType.class)
     public JAXBElement<LinkType> createSourceTypeLink(LinkType value) {
         return new JAXBElement<>(_SourceTypeLink_QNAME, LinkType.class, SourceType.class, value);
     }
@@ -1237,7 +1239,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link LogoType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "logo", scope = SourceType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "logo", scope = SourceType.class)
     public JAXBElement<LogoType> createSourceTypeLogo(LogoType value) {
         return new JAXBElement<>(_SourceTypeLogo_QNAME, LogoType.class, SourceType.class, value);
     }
@@ -1250,7 +1252,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "rights", scope = SourceType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "rights", scope = SourceType.class)
     public JAXBElement<TextType> createSourceTypeRights(TextType value) {
         return new JAXBElement<>(_SourceTypeRights_QNAME, TextType.class, SourceType.class, value);
     }
@@ -1263,7 +1265,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "subtitle", scope = SourceType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "subtitle", scope = SourceType.class)
     public JAXBElement<TextType> createSourceTypeSubtitle(TextType value) {
         return new JAXBElement<>(_SourceTypeSubtitle_QNAME, TextType.class, SourceType.class, value);
     }
@@ -1276,7 +1278,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "title", scope = SourceType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "title", scope = SourceType.class)
     public JAXBElement<TextType> createSourceTypeTitle(TextType value) {
         return new JAXBElement<>(_SourceTypeTitle_QNAME, TextType.class, SourceType.class, value);
     }
@@ -1289,7 +1291,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link DateTimeType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "updated", scope = SourceType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "updated", scope = SourceType.class)
     public JAXBElement<DateTimeType> createSourceTypeUpdated(DateTimeType value) {
         return new JAXBElement<>(_SourceTypeUpdated_QNAME, DateTimeType.class, SourceType.class, value);
     }
@@ -1302,7 +1304,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "name", scope = PersonType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "name", scope = PersonType.class)
     public JAXBElement<String> createPersonTypeName(String value) {
         return new JAXBElement<>(_PersonTypeName_QNAME, String.class, PersonType.class, value);
     }
@@ -1315,7 +1317,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link UriType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "uri", scope = PersonType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "uri", scope = PersonType.class)
     public JAXBElement<UriType> createPersonTypeUri(UriType value) {
         return new JAXBElement<>(_PersonTypeUri_QNAME, UriType.class, PersonType.class, value);
     }
@@ -1328,7 +1330,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link String }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "email", scope = PersonType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "email", scope = PersonType.class)
     @XmlJavaTypeAdapter(NormalizedStringAdapter.class)
     public JAXBElement<String> createPersonTypeEmail(String value) {
         return new JAXBElement<>(_PersonTypeEmail_QNAME, String.class, PersonType.class, value);
@@ -1342,7 +1344,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link PersonType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "author", scope = EntryType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "author", scope = EntryType.class)
     public JAXBElement<PersonType> createEntryTypeAuthor(PersonType value) {
         return new JAXBElement<>(_SourceTypeAuthor_QNAME, PersonType.class, EntryType.class, value);
     }
@@ -1355,7 +1357,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link CategoryType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "category", scope = EntryType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "category", scope = EntryType.class)
     public JAXBElement<CategoryType> createEntryTypeCategory(CategoryType value) {
         return new JAXBElement<>(_SourceTypeCategory_QNAME, CategoryType.class, EntryType.class, value);
     }
@@ -1368,7 +1370,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link ContentType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "content", scope = EntryType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "content", scope = EntryType.class)
     public JAXBElement<ContentType> createEntryTypeContent(ContentType value) {
         return new JAXBElement<>(_EntryTypeContent_QNAME, ContentType.class, EntryType.class, value);
     }
@@ -1381,7 +1383,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link PersonType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "contributor", scope = EntryType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "contributor", scope = EntryType.class)
     public JAXBElement<PersonType> createEntryTypeContributor(PersonType value) {
         return new JAXBElement<>(_SourceTypeContributor_QNAME, PersonType.class, EntryType.class, value);
     }
@@ -1394,7 +1396,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link IdType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "id", scope = EntryType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "id", scope = EntryType.class)
     public JAXBElement<IdType> createEntryTypeId(IdType value) {
         return new JAXBElement<>(_SourceTypeId_QNAME, IdType.class, EntryType.class, value);
     }
@@ -1407,7 +1409,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link LinkType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "link", scope = EntryType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "link", scope = EntryType.class)
     public JAXBElement<LinkType> createEntryTypeLink(LinkType value) {
         return new JAXBElement<>(_SourceTypeLink_QNAME, LinkType.class, EntryType.class, value);
     }
@@ -1420,7 +1422,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link DateTimeType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "published", scope = EntryType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "published", scope = EntryType.class)
     public JAXBElement<DateTimeType> createEntryTypePublished(DateTimeType value) {
         return new JAXBElement<>(_EntryTypePublished_QNAME, DateTimeType.class, EntryType.class, value);
     }
@@ -1433,7 +1435,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "rights", scope = EntryType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "rights", scope = EntryType.class)
     public JAXBElement<TextType> createEntryTypeRights(TextType value) {
         return new JAXBElement<>(_SourceTypeRights_QNAME, TextType.class, EntryType.class, value);
     }
@@ -1446,7 +1448,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "source", scope = EntryType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "source", scope = EntryType.class)
     public JAXBElement<TextType> createEntryTypeSource(TextType value) {
         return new JAXBElement<>(_EntryTypeSource_QNAME, TextType.class, EntryType.class, value);
     }
@@ -1459,7 +1461,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "summary", scope = EntryType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "summary", scope = EntryType.class)
     public JAXBElement<TextType> createEntryTypeSummary(TextType value) {
         return new JAXBElement<>(_EntryTypeSummary_QNAME, TextType.class, EntryType.class, value);
     }
@@ -1472,7 +1474,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "title", scope = EntryType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "title", scope = EntryType.class)
     public JAXBElement<TextType> createEntryTypeTitle(TextType value) {
         return new JAXBElement<>(_SourceTypeTitle_QNAME, TextType.class, EntryType.class, value);
     }
@@ -1485,7 +1487,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link DateTimeType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "updated", scope = EntryType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "updated", scope = EntryType.class)
     public JAXBElement<DateTimeType> createEntryTypeUpdated(DateTimeType value) {
         return new JAXBElement<>(_SourceTypeUpdated_QNAME, DateTimeType.class, EntryType.class, value);
     }
@@ -1498,7 +1500,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link PersonType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "author", scope = FeedType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "author", scope = FeedType.class)
     public JAXBElement<PersonType> createFeedTypeAuthor(PersonType value) {
         return new JAXBElement<>(_SourceTypeAuthor_QNAME, PersonType.class, FeedType.class, value);
     }
@@ -1511,7 +1513,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link CategoryType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "category", scope = FeedType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "category", scope = FeedType.class)
     public JAXBElement<CategoryType> createFeedTypeCategory(CategoryType value) {
         return new JAXBElement<>(_SourceTypeCategory_QNAME, CategoryType.class, FeedType.class, value);
     }
@@ -1524,7 +1526,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link PersonType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "contributor", scope = FeedType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "contributor", scope = FeedType.class)
     public JAXBElement<PersonType> createFeedTypeContributor(PersonType value) {
         return new JAXBElement<>(_SourceTypeContributor_QNAME, PersonType.class, FeedType.class, value);
     }
@@ -1537,7 +1539,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link GeneratorType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "generator", scope = FeedType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "generator", scope = FeedType.class)
     public JAXBElement<GeneratorType> createFeedTypeGenerator(GeneratorType value) {
         return new JAXBElement<>(_SourceTypeGenerator_QNAME, GeneratorType.class, FeedType.class, value);
     }
@@ -1550,7 +1552,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link IconType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "icon", scope = FeedType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "icon", scope = FeedType.class)
     public JAXBElement<IconType> createFeedTypeIcon(IconType value) {
         return new JAXBElement<>(_SourceTypeIcon_QNAME, IconType.class, FeedType.class, value);
     }
@@ -1563,7 +1565,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link IdType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "id", scope = FeedType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "id", scope = FeedType.class)
     public JAXBElement<IdType> createFeedTypeId(IdType value) {
         return new JAXBElement<>(_SourceTypeId_QNAME, IdType.class, FeedType.class, value);
     }
@@ -1576,7 +1578,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link LinkType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "link", scope = FeedType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "link", scope = FeedType.class)
     public JAXBElement<LinkType> createFeedTypeLink(LinkType value) {
         return new JAXBElement<>(_SourceTypeLink_QNAME, LinkType.class, FeedType.class, value);
     }
@@ -1589,7 +1591,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link LogoType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "logo", scope = FeedType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "logo", scope = FeedType.class)
     public JAXBElement<LogoType> createFeedTypeLogo(LogoType value) {
         return new JAXBElement<>(_SourceTypeLogo_QNAME, LogoType.class, FeedType.class, value);
     }
@@ -1602,7 +1604,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "rights", scope = FeedType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "rights", scope = FeedType.class)
     public JAXBElement<TextType> createFeedTypeRights(TextType value) {
         return new JAXBElement<>(_SourceTypeRights_QNAME, TextType.class, FeedType.class, value);
     }
@@ -1615,7 +1617,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "subtitle", scope = FeedType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "subtitle", scope = FeedType.class)
     public JAXBElement<TextType> createFeedTypeSubtitle(TextType value) {
         return new JAXBElement<>(_SourceTypeSubtitle_QNAME, TextType.class, FeedType.class, value);
     }
@@ -1628,7 +1630,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "title", scope = FeedType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "title", scope = FeedType.class)
     public JAXBElement<TextType> createFeedTypeTitle(TextType value) {
         return new JAXBElement<>(_SourceTypeTitle_QNAME, TextType.class, FeedType.class, value);
     }
@@ -1641,7 +1643,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link DateTimeType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "updated", scope = FeedType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "updated", scope = FeedType.class)
     public JAXBElement<DateTimeType> createFeedTypeUpdated(DateTimeType value) {
         return new JAXBElement<>(_SourceTypeUpdated_QNAME, DateTimeType.class, FeedType.class, value);
     }
@@ -1654,7 +1656,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link EntryType }{@code >}
      */
-    @XmlElementDecl(namespace = atomNamespaceURI, name = "entry", scope = FeedType.class)
+    @XmlElementDecl(namespace = ATOMNAMESPACEURI, name = "entry", scope = FeedType.class)
     public JAXBElement<EntryType> createFeedTypeEntry(EntryType value) {
         return new JAXBElement<>(_Entry_QNAME, EntryType.class, FeedType.class, value);
     }

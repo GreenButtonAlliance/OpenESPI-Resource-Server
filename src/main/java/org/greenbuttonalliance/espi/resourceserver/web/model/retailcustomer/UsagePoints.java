@@ -91,7 +91,7 @@ public class UsagePoints
      */
     public List<UsagePoint> getUsagePoint() {
         if (usagePoint == null) {
-            usagePoint = new ArrayList<UsagePoint>();
+            usagePoint = new ArrayList<>();
         }
         return this.usagePoint;
     }

@@ -87,7 +87,7 @@ public class PersonType {
     @XmlSchemaType(name = "language")
     protected String lang;
     @XmlAnyAttribute
-    private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+    private Map<QName, String> otherAttributes = new HashMap<>();
 
     /**
      * Gets the value of the nameOrUriOrEmail property.
@@ -116,7 +116,7 @@ public class PersonType {
      */
     public List<java.lang.Object> getNameOrUriOrEmail() {
         if (nameOrUriOrEmail == null) {
-            nameOrUriOrEmail = new ArrayList<java.lang.Object>();
+            nameOrUriOrEmail = new ArrayList<>();
         }
         return this.nameOrUriOrEmail;
     }
